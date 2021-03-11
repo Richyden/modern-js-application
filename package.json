@@ -4,12 +4,29 @@
   "private": true,
   "scripts": {
     "start": "npx seve -e '*.json,*.md,node_modules,_shared' -p 8000 -i .",
-    "api": "npx json-server ./_shared/api.json"
+    "api": "npx json-server ./_shared/api.json",
+    "dev": "parcel index.html",
+    "build": "rm -rf .cache dist && parcel build index.html --out-dir docs --public-url ./",
   },
   "dependencies": {
-    "json-server": "^0.16.1"
+    "json-server": "^0.16.1",
+    "npm": "^7.6.2",
+    "parcel-bundler": "^1.12.4"
   },
   "devDependencies": {
     "seve": "^0.10.0"
-  }
+  },
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Richyden/modern-js-application.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Richyden/modern-js-application/issues"
+  },
+  "homepage": "https://github.com/Richyden/modern-js-application#readme"
 }
